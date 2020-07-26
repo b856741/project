@@ -1,0 +1,9 @@
+
+.box{
+    width: 850px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }

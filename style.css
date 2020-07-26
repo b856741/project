@@ -1,0 +1,41 @@
+h1{
+    color: blue;
+    font-size: 30px;
+    border-left:10px solid blue;
+    border-top:10px solid purple;
+    border-right: 10px solid gold ;
+    border-bottom: 10px solid silver ;
+    }
+p{
+    color: yellow;
+    font-size: 20px;
+/**/    font-family: Verdana;
+    line-height: 24px;
+    /**/text-align: left;
+    text-indent: 40px;
+    /*letter-spacing: 5px;*/
+    /*text-decoration: line-through;*/
+}
+a{
+    color:black;
+
+}
+a:hover{
+    color:red; 
+    font-size: 30px;
+}
+a:active{
+    color:blue;
+}
+.red{
+    color: red;
+}
+.pink{
+    color:pink;
+}
+img{
+    border-left:10px solid blue;
+    border-top:10px solid purple;
+    border-right: 10px solid gold ;
+    border-bottom: 10px solid silver ;
+}

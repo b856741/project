@@ -1,0 +1,57 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "微軟正黑體", "Microsoft JhengHei";
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F5D45;
+  }
+  .all{
+    width: 90%;
+  }
+  .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #EAF0ED;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    color: #3F5D45;
+    font-weight: bold;
+  }
+  .row{
+    display: flex;
+    background-color: #fff;
+    padding: 30px 50px;
+  }
+  .row .con{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+  /* .row >div{border:1px solid #000} */
+  .btns a{
+    font-size: 20px;
+    color: #3F5D45;
+    padding: 0 3px;
+  }
+  .btns a:hover {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+  }
+  .top p:hover {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+  }
+  .row .pic{
+    height: 350px;
+    width: 350px;
+    background-image: url('https://images.unsplash.com/photo-1462745294598-b3f9a2d7b858?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
+    background-size: cover;
+  }

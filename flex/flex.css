@@ -1,0 +1,27 @@
+ul{
+    list-style: none;
+}
+.menu{
+    width: 600px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* 換行 */
+}
+.menu li{
+    width: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.menu li a{
+    display: block;
+    background-color: #00ffa2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #004466;
+}
+.menu li a:hover{
+    background-color: #004466;
+    color: #00ffa2;
+}

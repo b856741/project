@@ -1,0 +1,75 @@
+.header{
+    border: 1px solid red;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    /* 底下的定位會依據這裡的設置 */
+}
+.box{
+    position: absolute;
+    /* 絕對定位 元素間重疊 */
+    width: 70px;
+    height: 70px;
+    background-color:#000;
+    right: 30px;
+    /* top: 0; */
+    bottom: 10;
+}
+.box2{
+    position: absolute;
+    /* 絕對定位 元素間重疊 */
+    width: 70px;
+    height: 70px;
+    background-color:#F00;
+    right: -10px;
+    /* top: 0; */
+    bottom: 0;
+    z-index: 5;
+    /* z-index: ; div相互重疊較大者可覆蓋 */
+}
+.box3{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: pink;
+    right: 5px;
+    bottom: -20px;
+    z-index: 10;
+}
+ul li{
+    list-style: none;
+}
+.productlist{
+    width: 500px;
+}
+.productlist .sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    color: black;
+    padding: 8px;
+}
+.productlist img{
+    width: 100%;
+}
+.productlist li h2{
+    font-size: 24px;
+    font-style: italic;
+    color: aqua;
+}
+.productlist li span{
+    font-size: 15px;
+    color: blue;
+}
+.productlist li{
+    float: left;
+    width: 120px;
+    height: 300px;
+    border: #000 1px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}

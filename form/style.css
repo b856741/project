@@ -48,3 +48,11 @@ table {
 	border-spacing: 0;
 }
 /*reset upward*/
+.price th,.price td{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.price th{
+    padding: 10px;
+    background-color: green;
+}

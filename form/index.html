@@ -31,5 +31,39 @@
             <td>3</td>
         </tr>
     </table>
+    <div class="space">
+        <p>text輸入，submit傳送，placeholder、label</p>
+        <p>radio 單選 checkbox多選</p>
+        <p>select textarea</p>
+        <p>cursor pointer滑鼠標示轉換</p>
+    </div>
+    <form action="index.html">
+        <label for="mail">email:</label>
+        <!-- for 跳到指定文字欄位 -->
+        <input id="mail" type="text" placeholder="input email"  name="mail">
+        <label for="name">name:</label>
+        <input id="name" type="text" placeholder="input name" name="person">
+        <input type="submit" value="next">
+        <h2>性別</h2>
+        <input type="radio" name="sex">男生
+        <input type="radio" name="sex">女生
+        <h2>興趣</h2>
+        <input type="checkbox" name="hobby">swim
+        <input type="checkbox" name="hobby">card
+        <input type="checkbox" name="hobby">movie
+        <br>
+        <input type="submit" value="enter">
+        <br>
+        <label for="birth">生日</label>
+        <select name="birth" id="birth">
+            <option value="1900">1900</option>
+            <option value="1900">1901</option>
+        </select>
+        <input type="submit" value="enter">
+        <br>
+        <h2>內容</h2>
+        <textarea name="content" id="" cols="30" rows="10"></textarea>
+        <input type="button"class="btn"value="點選">
+</form>
 </body>
 </html>

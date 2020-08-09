@@ -56,3 +56,21 @@ table {
     padding: 10px;
     background-color: green;
 }
+.space{
+	width: 800px;
+	height: 100px;
+	background-color: #f0f;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.btn{
+	background-color: green;
+	padding: 10px 30px;
+	color: white;
+	border: solid 5px red;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.btn:hover{
+	background-color: #000;
+}

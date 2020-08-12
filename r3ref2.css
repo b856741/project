@@ -1,0 +1,444 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   https://amber871023.github.io/W3/HW3.html
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: "微軟正黑體";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+*{
+    color: #3F5D45;
+    font-family: "微軟正黑體";
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 940px; 
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+}
+.burgerMenu{
+   display: none;
+}
+.logo{
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    width: 220px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu{
+    display:flex;
+    align-items:center;
+}
+.menu a{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px; 
+    margin-left: 60px;
+}
+.menu a:hover{
+    background: #EAF0ED;
+    border-left: 2px solid #3F5D45;
+    padding: 0px 10px 0px 10px;
+}
+@media(max-width:992px){
+    .burgerMenu{
+        display: block;
+        padding: 0 30px ;
+    }
+    .logo{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+        width: 150px;
+        height: 23px;
+        margin-left: 30px;
+    }
+    .menu li:nth-child(1), .menu li:nth-child(2), .menu li:nth-child(3){
+            display: none;
+    }
+    .menu li:nth-child(4){
+        margin-right: 30px;
+    }
+}
+@media(max-width:767px){
+    .container{
+        max-width: 375px;
+    }
+    .header{
+    justify-content: space-between;
+    }
+    
+}
+.banner{
+    margin-bottom: 60px;
+}
+
+@media (max-width: 767px){
+    .banner{
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.sidebar{
+    width: 30%;
+}
+.sidebar h3{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    background: #3F5D45;
+    color: #EAF0ED;
+    padding: 16px 0 16px 0;
+}
+.sidebar li a{
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    border: 1px solid #EAF0ED ;
+    padding: 16px 0 16px 0;
+}
+.sidebar a:hover{
+    background: #EAF0ED; 
+}
+@media(max-width:992px){
+    .main{
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .sidebar ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar li{
+        width: 50%;
+        margin: 0;
+    }
+}
+@media (max-width: 767px){
+    .sidebar li{
+        width: 100%;
+    }
+}
+.product{
+    width: 67%;
+    margin-bottom: 10px;
+}
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Items {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.Items .like{
+    position: absolute;
+    top:19px;
+    right:22px;
+}
+.Items .featured{
+    position: absolute;
+    top:0;
+    left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+.info{
+    display: flex;    
+    justify-content: center;
+}
+.info h3{
+    border-left: 1px solid #EAF0ED;
+    border-top: 1px solid #EAF0ED;
+    border-bottom: 1px solid #EAF0ED;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    width: 58%;
+    padding: 14px 0;
+}
+.info span{
+    border: 1px solid #EAF0ED ;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    width: 42%;
+    padding: 14px 0;
+}
+.addCart{
+    background:#EAF0ED;
+    border: 1px solid #EAF0ED;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 20px;
+    width: 100%;
+    padding: 16px;
+    cursor: pointer ;
+}
+.addCart:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+@media(max-width: 992px){
+    .product{
+        width: 100%;
+        margin: 0 5% 5% 5%;
+    }
+    .Items{
+        width: 46%;
+    }
+}
+@media (max-width: 767px){
+    
+    .Items{
+        width: 100%;
+    }
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+.page ul{
+    display: flex;
+    align-items: center;
+}
+
+.pageNumber a{
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    border: 0.5px solid #EAF0ED;
+    padding: 16px 24px;
+}
+
+.arrow a{
+    display: block;
+    border: 0.5px solid #EAF0ED;
+    padding: 17px;
+}
+.pageNumber a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+.arrow a:hover{
+    border: 0.5px solid #EAF0ED;
+    background:#EAF0ED;
+}
+@media(max-width: 992px){
+    .page{
+        justify-content: center;
+    }
+}
+.footerBox{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.subscribe{
+    display: flex;
+    justify-content: space-around;
+    background: #3F5D45;
+}
+
+.subscribe .subTitle{
+    display: flex;
+    align-items: center;  
+}
+.subscribe .subTitle p{
+    color: #EAF0ED;
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 19px;
+}
+.subInput{
+    display: flex;
+    padding: 30px 0 30px 0px;
+    position: relative;
+    width: 35%;
+}
+.inputText{
+    background-color: #EAF0ED;
+    border: 0;
+    width: 100%;
+    font-size: 18px;
+    padding: 16px 0 ;
+    padding-left: 50px;
+    margin-right: 80px;
+}
+.form{
+    width: 100%;
+
+}
+.icon-mail{
+    position: absolute;
+    top:50%;
+    left:25px;
+    transform: translate(-50%, -50%);
+}
+
+.subscribe .subInput button{
+    background-color:#FFE180;
+    border:none;
+    cursor: pointer;
+    padding: 16px 20px;
+    position: absolute;
+    right:18px;
+    top: 30px;
+}
+@media(max-width: 992px){
+    .subscribe{
+        flex-direction: column;
+        align-items: center;
+    }
+    .subTitle{
+        margin-top: 30px;
+    }
+    .subInput{
+        width: 70%;
+    }
+}
+
+.footer{
+    background: #EAF0ED;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.f-logo{
+    margin-bottom: 115px;
+}
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+}
+.footerInfo li{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.link{
+    display: flex;
+    margin: 30px 0;
+}
+.link a img{
+    margin-right: 8px;
+}
+.footer .slogan{
+    display: flex;
+    flex-direction: column;
+}
+.footer .slogan h3{
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.footer .slogan p{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@media(max-width: 767px){
+    .footer{
+        flex-direction: column;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    .footer .slogan h3{
+        display: none;
+    }
+    .f-logo{
+        margin-bottom: 39.5px;
+    }
+    .link{
+        margin: 37px 0 23px 0;
+    }
+}

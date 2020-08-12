@@ -184,6 +184,7 @@ img{
     line-height: 20px;
     width: 100%;
     padding: 16px;
+    cursor: pointer;
 }
 .page{
     display: flex;
@@ -210,9 +211,16 @@ img{
     background-color: #3F5D45;
     color: #EAF0ED;
 }
+.addCart:hover{
+    background-color: #3f5d45;
+    color: #EAF0ED;
+}
 .arrow a:hover{
     border: #3F5D45 0.5px solid;
     background-color: #EAF0ED;
+}
+.enterBotton:hover{
+    background-color: #eaf0ed;
 }
 /*w3*/
 .footerForm{
@@ -303,12 +311,103 @@ img{
 .cLink{
     display: flex;
 }
-.cLink a{
+.cLink a img{
     width: 32px;
-    /*height: 32px;*/
     margin-right: 8px;
 }
 .rights{
     font-size: 12px;
     color: #3F5D45;
+}
+.page{
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 60px;
+}
+.page ul{
+    display: flex;
+    align-items: center;
+}
+.pageNumber a{
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    border: 0.5px solid #EAF0ED;
+    padding: 16px 24px;
+}
+.arrow a{
+    display: block;
+    border:0.5px solid #EAF0ED;
+    padding: 16px;
+}
+.pageNumber a:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+.arrow a:hover{
+    border: 0.5px solid #EAF0ED;
+    background-color: #EAF0ED;
+}
+/*width 992 768 568 380*/
+@media(max-width:992px){
+    .logo{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+        width: 150px;
+        height: 23px;
+        margin-left: 30px;
+    }
+    .menu li:nth-child(1),.menu li:nth-child(2),.menu li:nth-child(3){
+        display: none;
+    }
+    .menu li:nth-child(4){
+        margin-right: 30px;
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .sidebar ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar li{
+        width: 50%;
+        margin: 0;
+    }
+}
+@media (max-width:768px){
+    .container{
+        max-width: 375px;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .banner{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .sidebar li{
+        width: 100%;
+    }
+    .items{
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    .slogan p{
+        display: none;
+    }
+    .cLink{
+        margin: 37px 0 23px 0;
+    }
+    .footerLogo{
+        margin-bottom: 39.5px;
+    }
 }

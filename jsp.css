@@ -1,6 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+   https://amber871023.github.io/W3/HW3.html
 */
 
 html, body, div, span, applet, object, iframe,
@@ -47,26 +48,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*reset upward*/
-img{
-    max-width:100%;
-    height: auto;
-  }
-  div{
-    width: 300px;
-    border: 8px solid #000;
-  }
-  div img {
-  /*  旋轉  */
-    transform: rotate(20deg);
-  /* 放大倍率 */
-  /*   transform: scale(2); */
-  /* 移動 */
-  /*   transform: translateX(100px); */
-  /* 半透明 */
-  opacity: 0.5;
-  }
-  
-
-
-  
+/**/
+h1{
+  color: aqua;
+  font-size: 30px;
+}

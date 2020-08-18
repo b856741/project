@@ -48,38 +48,21 @@ table {
 	border-spacing: 0;
 }
 /*reset upward*/
-@keyframes exrate {
-    0%   {background-color:pink; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:50px;}
-  }
-  
-  /* The element to apply the animation to */
-  .move {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: red;
-    animation-name: exrate;
-    animation-duration: 4s;
-  /*  晚幾秒發動  */
-    animation-delay: 2s; 
-  /*  要重複跑幾次，或者是用 infinite 一直持續跑   */
-  /*   animation-iteration-count: infinite; * /
-    
-  /*  停留在哪個影格  forwards、backwards、both */
-    animation-fill-mode: both;
-  /* 
-    forwards 停留在最後一個位置   
-    backwards: 留在第一個位置 (預設位)
-    both 擁有前兩者功能
-    */
-  }
-  .page{
-    margin-top: 200px;
-  }
-
-
+.page{
+    border: 5px black solid;
+    margin-bottom: 5px;
+    padding: 20px 20px;
+    width: 500px;
+}
+.content{
+    border:5px black solid;
+    margin-top: 1000px;
+    /* margin-top: 1000px; */
+    margin-bottom: 5px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    width: 500px;
+}
   

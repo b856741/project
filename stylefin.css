@@ -46,6 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*reset upward*/
+/*this css used for weekly1 and weekly4 main task*/
 *,*:before,*:after{
     box-sizing: border-box;
 }

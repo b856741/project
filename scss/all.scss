@@ -1,0 +1,30 @@
+// scss階層需少於五層
+//變數需放最上面
+@import"reset";//reset最先放
+@import"index";
+//@import"layout";
+//@import"checkout";
+//@import"variable";
+
+$red:#ff0000;
+$font-m:16px;
+$font-l:20px;
+$font-s:12px;
+.header{
+    padding:10px 0;
+    width: 50px;
+    color:$red;
+    .menu{
+        width: 45px;
+        font-size: 16px;
+        a{
+            color: black;
+        }
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        background-color:black;
+    }
+    
+}

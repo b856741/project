@@ -1,0 +1,28 @@
+@mixin pad{
+    @media(max-width: 768px){
+      @content;
+    }
+  }
+  
+  @mixin mobile{
+    @media(max-width: 568px){
+      @content;
+    }
+  }
+  .header{
+    width: 500px;
+    @media (max-width:768px) {
+        width: 13px;
+        font-size: 20px;
+    }
+    @media(max-width:568px){
+        font-size: 8px;
+        a{
+            background-color: #fff;
+        }
+    }
+    a{
+       background-color: black;
+        }
+  }
+  

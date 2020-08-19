@@ -48,3 +48,21 @@ table {
 	border-spacing: 0;
 }
 /*reset upward*/
+.container{
+    width: 100%;
+    /* width: 500px; */
+    margin: 0 auto;
+}
+.header{
+    height: 700px;
+    background-color: aqua;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer{
+    height: 400px;
+    background-color: bisque;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}

@@ -13,12 +13,15 @@
   .header {
     font-size: 8px;
   }
-  .header a {
-    background-color: #fff;
-  }
 }
 
 .header a {
-  background-color: black;
+  background: black;
+}
+
+@media (max-width: 568px) {
+  .header a {
+    background: white;
+  }
 }
 /*# sourceMappingURL=0805.css.map */

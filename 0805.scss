@@ -3,26 +3,25 @@
       @content;
     }
   }
-  
-  @mixin mobile{
-    @media(max-width: 568px){
+@mixin mobile{
+  @media(max-width: 568px){
       @content;
     }
   }
-  .header{
+  // @mixin name-> @indlude name
+.header{
     width: 500px;
-    @media (max-width:768px) {
-        width: 13px;
-        font-size: 20px;
-    }
-    @media(max-width:568px){
-        font-size: 8px;
-        a{
-            background-color: #fff;
+    @include pad{
+      width: 13px;
+      font-size: 20px;    
+    };
+    @include mobile{
+      font-size: 8px;
+      }
+      a{
+        background: black;
+        @include mobile{
+          background: white;
         }
+      }
     }
-    a{
-       background-color: black;
-        }
-  }
-  

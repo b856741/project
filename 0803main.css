@@ -1,0 +1,442 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: "微軟正黑體";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset upward*/
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{
+    color: #3F5D45;
+    font-family: "微軟正黑體";
+}
+a{
+    text-decoration: none;
+    /*w3*/
+    display: block;
+}
+img{
+    display: block;
+    /*w3*/
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 940px;
+    /*container max-width 依解析度調整圖文內容*/
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-left: 60px;
+}
+.menu a:hover{
+    background-color:#EAF0ED;
+    border-left: 2px solid #3F5D45;
+    padding: 0px 10px 0px 10px;
+}
+.banner img{
+    margin-bottom: 60px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.sidebar{
+    /* width: 300px; */
+    width: 33%;
+}
+.sidebar h3{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    background: #3F5D45;
+    color:#EAF0ED;
+    padding: 16px 0 16px 0;
+}
+.sidebar li a{
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    border: 1px solid #EAF0ED;
+    padding: 16px 0 16px 0;
+}
+.sidebar a:hover{
+    background: #EAF0ED;
+}
+.product{
+    /* width: 640px; */
+    width: 65%;/*%支援響應式*/
+}
+.productList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*使item靠最左 最右 元素間產生間隔
+    可不用在item設定margin-left*/
+}
+.items{
+    /* width: 300px; 高度不寫死*/
+    position: relative;
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+}
+.items .like{
+    position:absolute;
+    top:19px;
+    right: 22px;
+}
+.items .feature{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+.info{
+    display: flex;
+}
+.info h3{
+    border-left: 1px solid #EAF0ED;
+    border-top: 1px solid #EAF0ED;
+    border-bottom: 1px solid #EAF0ED;
+    font-size: 20px;
+    line-height: 20px;
+    font-size: 500;
+    padding: 14px 33px;
+}
+.info span{
+    border: 1px solid #EAF0ED;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 14px 25px 14px 25px;
+}
+.addCart{
+    background-color: #EAF0ED;
+    border: 1px solid #EAF0ED;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 20px;
+    width: 100%;
+    padding: 16px;
+    cursor: pointer;
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+}
+.page ul{
+    display: flex;
+    align-items: center;
+    margin-bottom:60px ;
+}
+.pageNumber a{
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    border: 0.5px solid #EAF0ED;
+    padding: 16px 24px;
+}
+.arrow a{
+    display: block;
+    border: 0.5px solid #EAF0ED;
+    padding: 17px;
+}
+.pageNumber a:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+.addCart:hover{
+    background-color: #3f5d45;
+    color: #EAF0ED;
+}
+.arrow a:hover{
+    border: #3F5D45 0.5px solid;
+    background-color: #EAF0ED;
+}
+.enterBotton:hover{
+    background-color: #EAF0ED;
+}
+/*w3*/
+.footerForm{
+    background-color: #3F5D45;
+    padding: 30px;
+}
+.containerForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.labelForm{
+    display: flex;
+    align-items: center;
+}
+.labelForm span{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #EAF0ED;
+}
+.labelForm img{
+    height: 40px;
+    margin-right: 20px;
+}
+.formInput{
+    display: flex;
+    position: relative;
+}
+.formInput input{
+    /* display: block; */
+    padding-left: 55px;
+    font-weight: bold;
+    color: #3F5D45;
+    outline: none;
+    border: none;
+}
+.formInput button{
+    cursor: pointer;
+    background-color: #FFE180;
+    padding: 16px;
+    outline: none;
+    border:none;
+}
+.mailIcon{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    bottom: 16px;
+}
+.footer{
+    background-color: #EAF0ED;
+    padding: 30px 0px;
+}/*
+.footerInner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}*/
+.footerInnerTop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contactMethod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cList{
+    font-size: 16px;
+    line-height: 24px;
+    color: #3F5D45;
+}
+.slogan{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #3F5D45;
+}
+.footerInnerBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.cLink{
+    display: flex;
+}
+.cLink a img{
+    width: 32px;
+    margin-right: 8px;
+}
+.rights{
+    font-size: 12px;
+    color: #3F5D45;
+}
+.page{
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 60px;
+}
+.page ul{
+    display: flex;
+    align-items: center;
+}
+.pageNumber a{
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    border: 0.5px solid #EAF0ED;
+    padding: 16px 24px;
+}
+.arrow a{
+    display: block;
+    border:0.5px solid #EAF0ED;
+    padding: 16px;
+}
+.pageNumber a:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+.arrow a:hover{
+    border: 0.5px solid #EAF0ED;
+    background-color: #EAF0ED;
+}
+/*width 992 768 568 380*/
+@media(max-width:992px){
+    .logo{
+        /* background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg); */
+        width: 150px;
+        height: 23px;
+        margin-left: 30px;
+    }
+    .menu li:nth-child(1),.menu li:nth-child(2),.menu li:nth-child(3){
+        display: none;
+    }
+    .menu li:nth-child(4){
+        margin-right: 30px;
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .sidebar ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar li{
+        width: 50%;
+        margin: 0;
+    }
+    .page{
+        justify-content: center;
+        /*平板時置中*/
+    }
+    .product{
+        width: 100%;
+        /*滿版*/
+    }
+    .productList{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:768px){
+    .container{
+        max-width: 575px;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .banner{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .sidebar li{
+        width: 100%;
+    }
+    /*.items{砍
+        width: 100%;
+    }
+    .product{可留
+        width: 100%;
+        滿版
+    } */
+    .footer{
+        flex-direction: column;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    .slogan p{
+        display: none;
+    }
+    .cLink{
+        margin: 37px 0 23px 0;
+    }
+    .footerLogo{
+        margin-bottom: 39.5px;
+    }
+    .containerForm{
+        flex-direction: column;
+        /*直向呈現*/
+    }
+    .formInput{
+        margin-top: 20px;
+    }
+}
+/*w3*/

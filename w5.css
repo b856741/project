@@ -76,6 +76,7 @@ table {
 
 .header .dehaze {
   display: none;
+  /*disappear while >768*/
   border: none;
   background: transparent;
   cursor: pointer;

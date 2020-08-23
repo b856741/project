@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset upward*/
+/*this css used for weekly4 main task*/
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+div h1{
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    border-color: gray;
+}
+.title{
+    margin:0px 30px;
+    width: 1000px;
+    font-family: 微軟正黑體;
+}
+.header{
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    border-color: gray;
+    padding-bottom: 10px;
+}
+.red{
+    font-size:24px;
+    color: red;
+}
+h2{
+    border-bottom: 1px solid black;
+}
+.profile{
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+.photo{
+		margin-top: 40px;
+		margin-bottom: 40px;
+    }
+p{
+    font-family: sans-serif;
+    font-size: 24px;
+}
+.education{
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+.skills{
+    text-align: center;
+    background-color: #415165;
+}
+.skills h3{
+    font-size: 28px;
+    color: white;
+}
+.skills ul{
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: auto;
+	margin-bottom: 40px;
+	border-left: white solid 1px;
+	padding-left: 20px;
+}
+.skills li{
+	color: rgba(255,255,255, 0.7);
+	font-size: 24px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.whiteline{
+    border-bottom: 3px solid white;
+}
+.work{
+    margin: 10px;
+    padding: 5px;
+    text-indent: 5px;
+    width: 500px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+.workex {
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: auto;
+	margin-bottom: 40px;
+	border-left: greenyellow solid 1px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    width:700px;
+    line-height: 1.2;
+}
+.work h3{
+    font-weight: bold;
+    font-size: 24px;
+}
+.work p{
+    font-size: 18px;
+    line-height: 2;
+}
+.contact{
+    padding: 5px;
+    background-color: darkslategrey;
+    text-align: center;
+    color:white;
+    line-height: 1.5;
+}
+.contact li{
+    margin-bottom: 5px;
+}
+a:hover{
+    color: brown;
+}
+.container{
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width:1000px; 
+}

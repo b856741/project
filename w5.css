@@ -63,6 +63,7 @@ table {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px;
+  /*dehaze*/
 }
 
 @media (max-width: 768px) {
@@ -70,6 +71,19 @@ table {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+.header .dehaze {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header .dehaze {
+    display: block;
   }
 }
 
@@ -109,7 +123,7 @@ table {
 }
 
 @media (max-width: 992px) {
-  .menu li:nth-child(1), .menu .menu li:nth-child(2), .menu .menu li:nth-child(3) {
+  .menu li:nth-child(1), .menu li:nth-child(2), .menu li:nth-child(3) {
     display: none;
   }
   .menu li:nth-child(4) {

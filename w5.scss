@@ -1,0 +1,223 @@
+@import"scss/reset";
+@import"scss/w5layout";
+@mixin pad{
+    @media(max-width: 992px){
+      @content;
+    }
+  }
+@mixin mobile{
+  @media(max-width: 768px){
+      @content;
+    }
+  }
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+*{
+    color: #3F5D45;
+    font-family: "微軟正黑體";
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+    @include mobile{
+        max-width: 575px;
+    }
+}
+
+/*header.logo.menu*/
+.banner{
+    @include mobile{
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+.banner img{
+        margin-bottom: 60px;
+    }
+.main{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        @include pad{
+            flex-wrap: wrap;
+        }
+    }
+.sidebar{
+        width: 33%;
+    h3{
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        background-color: #3F5D45;
+        color: #EAF0ED;
+        padding: 16px 0 16px 0;
+    }
+    li a{
+        display: block;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        border: 1px solid #EAF0ED;
+        padding: 16px 0 16px 0;
+    }
+    a:hover{
+        background-color: #EAF0ED;
+    }
+    @include pad{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li{
+            width: 50%;
+            margin: 0;
+        }
+    }
+    @include mobile{
+        li{
+            width: 100%;
+        }
+    }
+}
+.product{
+    width: 65%;
+    @include pad{
+        width: 100%;
+    }
+}
+.productList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include pad{
+        justify-content: space-evenly;
+    }
+}
+.items{
+    position: relative;
+    margin-bottom: 20px;
+    .like{
+        position: absolute;
+        top: 19px;
+        right: 22px;
+    }
+    .feature{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        writing-mode: vertical-lr;
+        letter-spacing: 5px;
+        background-color: #3F5D45;
+        color: #EAF0ED;
+    }
+}
+.info{
+    display: flex;
+    h3{
+        border-left: 1px solid #EAF0ED;
+        border-top: 1px solid #EAF0ED;
+        border-bottom: 1px solid #EAF0ED;
+        font-size: 20px;
+        line-height: 20px;
+        font-size: 500;
+        padding: 14px 33px;
+    }
+    span{
+        border: 1px solid #EAF0ED;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        padding: 14px 25px 14px 25px;
+    }
+}
+.addCart{
+    background-color: #EAF0ED;
+    border: 1px solid #EAF0ED;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 20px;
+    width: 100%;
+    padding: 16px;
+    cursor: pointer;
+    :hover{
+        background-color: #3f5d45;
+        color: #EAF0ED;
+    }
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    ul{
+        display: flex;
+        align-items: center;
+        margin-bottom:60px ;
+    }
+    @include pad{
+        justify-content: center;
+    }
+}
+.pageNumber{
+    a{
+        display: block;
+        font-size: 20px;
+        line-height: 28px;
+        border: 0.5px solid #EAF0ED;
+        padding: 16px 24px;
+    }
+    a:hover{
+        background-color: #3F5D45;
+        color: #EAF0ED;
+    }
+}
+.arrow{
+    a{
+        display: block;
+        border: 0.5px solid #EAF0ED;
+        padding: 17px;
+    }
+    a:hover{
+        border: #3F5D45 0.5px solid;
+        background-color: #EAF0ED;
+    }
+}
+/*enterBotton:hover*/
+/*w3*/
+
+/*footerForm*/
+/*containerForm*/
+/*labelForm*/
+/*formInput*/
+/*mailIcon*/
+/*footer*/
+/*footerInnerTop*/
+/*contactMethod*/
+/*cList*/
+/*slogan*/
+/*footerInnerBottom*/
+/*cLink*/
+.page{
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 60px;
+    ul{
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,175 @@
+/*layout start*/
+@mixin pad{
+    @media(max-width: 992px){
+      @content;
+    }
+  }
+@mixin mobile{
+  @media(max-width: 768px){
+      @content;
+    }
+  }
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    @include mobile{
+        justify-content: space-between;
+    }
+    /*dehaze*/
+    .dehaze{
+        display: none;
+        border: none;
+        background:transparent;
+        cursor: pointer;
+        @include mobile{
+            display: block;
+        }
+    }
+}
+.logo{
+    width: 100%;
+    @include pad{
+        width: 150px;
+        height: 23px;
+        margin-left: 30px;}
+}
+.menu{
+    display: flex;
+    align-items: center;
+    a{
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-left: 60px;
+    }
+    a:hover{
+        background-color: #EAF0ED;
+        border-left: 2px solid #3F5D45;
+        padding: 0px 10px 0px 10px;
+    }
+    @include pad{
+        li:nth-child(1),li:nth-child(2),li:nth-child(3){
+            display: none;
+        }
+        li:nth-child(4){
+            margin-right: 30px;
+        }
+    }
+}
+.labelForm{
+    display: flex;
+    align-items: center;
+    span{
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        color: #EAF0ED;
+    }
+    img{
+        height: 40px;
+        margin-right: 20px;
+    }
+}
+.enterBotton:hover{
+    background-color: #EAF0ED;
+}
+.footerForm{
+    background-color: #3F5D45;
+    padding: 30px;
+}
+.containerForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formInput{
+    display: flex;
+    position: relative;
+    input{
+        padding-left: 55px;
+        font-weight: bold;
+        color: #3F5D45;
+        outline: none;
+        border: none;
+    }
+    button{
+        cursor: pointer;
+        background-color: #FFE180;
+        padding: 16px;
+        outline: none;
+        border:none;
+    }
+}
+.mailIcon{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    bottom: 16px;
+}
+.footer{
+    background-color: #EAF0ED;
+    padding: 30px 0px;
+    @include mobile{    
+        flex-direction: column;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+}
+.footerInnerTop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contactMethod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cList{
+    font-size: 16px;
+    line-height: 24px;
+    color: #3F5D45;
+}
+.slogan{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #3F5D45;
+    @include mobile{
+        p{
+            display: none;
+        }
+    }
+}
+.footerInnerBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.cLink{
+    display: flex;
+    a img{
+        width: 32px;
+        margin-right: 8px;
+    }
+    @include mobile{
+        margin: 37px 0 23px 0; 
+    }
+}
+@include mobile{
+    .footerLogo{
+        margin-bottom: 39.5px;
+    }
+    .containerForm{
+        flex-direction: column;
+        /*直向呈現*/
+    }
+    .formInput{
+        margin-top: 20px;
+    }
+}
+/*layout end*/

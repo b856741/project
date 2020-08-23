@@ -1,0 +1,591 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*reset upward*/
+/*layout start*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.logo {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .logo {
+    width: 150px;
+    height: 23px;
+    margin-left: 30px;
+  }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu a {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-left: 60px;
+}
+
+.menu a:hover {
+  background-color: #EAF0ED;
+  border-left: 2px solid #3F5D45;
+  padding: 0px 10px 0px 10px;
+}
+
+@media (max-width: 992px) {
+  .menu li:nth-child(1), .menu .menu li:nth-child(2), .menu .menu li:nth-child(3) {
+    display: none;
+  }
+  .menu li:nth-child(4) {
+    margin-right: 30px;
+  }
+}
+
+.labelForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.labelForm span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #EAF0ED;
+}
+
+.labelForm img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.enterBotton:hover {
+  background-color: #EAF0ED;
+}
+
+.footerForm {
+  background-color: #3F5D45;
+  padding: 30px;
+}
+
+.containerForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.formInput input {
+  padding-left: 55px;
+  font-weight: bold;
+  color: #3F5D45;
+  outline: none;
+  border: none;
+}
+
+.formInput button {
+  cursor: pointer;
+  background-color: #FFE180;
+  padding: 16px;
+  outline: none;
+  border: none;
+}
+
+.mailIcon {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  bottom: 16px;
+}
+
+.footer {
+  background-color: #EAF0ED;
+  padding: 30px 0px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.footerInnerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contactMethod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cList {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F5D45;
+}
+
+.slogan {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: #3F5D45;
+}
+
+@media (max-width: 768px) {
+  .slogan p {
+    display: none;
+  }
+}
+
+.footerInnerBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cLink a img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .cLink {
+    margin: 37px 0 23px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerLogo {
+    margin-bottom: 39.5px;
+  }
+  .containerForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /*直向呈現*/
+  }
+  .formInput {
+    margin-top: 20px;
+  }
+}
+
+/*layout end*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  color: #3F5D45;
+  font-family: "微軟正黑體";
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 575px;
+  }
+}
+
+/*header.logo.menu*/
+@media (max-width: 768px) {
+  .banner {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.banner img {
+  margin-bottom: 60px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.sidebar {
+  width: 33%;
+}
+
+.sidebar h3 {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  padding: 16px 0 16px 0;
+}
+
+.sidebar li a {
+  display: block;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  border: 1px solid #EAF0ED;
+  padding: 16px 0 16px 0;
+}
+
+.sidebar a:hover {
+  background-color: #EAF0ED;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .sidebar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sidebar li {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar li {
+    width: 100%;
+  }
+}
+
+.product {
+  width: 65%;
+}
+
+@media (max-width: 992px) {
+  .product {
+    width: 100%;
+  }
+}
+
+.productList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .productList {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.items {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.items .like {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+}
+
+.items .feature {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: 5px;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info h3 {
+  border-left: 1px solid #EAF0ED;
+  border-top: 1px solid #EAF0ED;
+  border-bottom: 1px solid #EAF0ED;
+  font-size: 20px;
+  line-height: 20px;
+  font-size: 500;
+  padding: 14px 33px;
+}
+
+.info span {
+  border: 1px solid #EAF0ED;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 14px 25px 14px 25px;
+}
+
+.addCart {
+  background-color: #EAF0ED;
+  border: 1px solid #EAF0ED;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+  width: 100%;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.addCart :hover {
+  background-color: #3f5d45;
+  color: #EAF0ED;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.page ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  .page {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.pageNumber a {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  border: 0.5px solid #EAF0ED;
+  padding: 16px 24px;
+}
+
+.pageNumber a:hover {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+
+.arrow a {
+  display: block;
+  border: 0.5px solid #EAF0ED;
+  padding: 17px;
+}
+
+.arrow a:hover {
+  border: #3F5D45 0.5px solid;
+  background-color: #EAF0ED;
+}
+
+/*enterBotton:hover*/
+/*w3*/
+/*footerForm*/
+/*containerForm*/
+/*labelForm*/
+/*formInput*/
+/*mailIcon*/
+/*footer*/
+/*footerInnerTop*/
+/*contactMethod*/
+/*cList*/
+/*slogan*/
+/*footerInnerBottom*/
+/*cLink*/
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+.page ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=w5.css.map */

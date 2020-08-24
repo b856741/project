@@ -1,0 +1,47 @@
+/* max-width */
+*,*:before,*::after{
+    box-sizing: border-box;
+  }
+  body{
+    color: #fff;
+  }
+  .container{
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin:0 auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu{
+    width: 30%;
+    background: pink;
+  }
+  .content{
+    width: 70%;
+    background: green;
+  
+  }
+  @media(max-width:992px){
+    .container{
+      max-width: 960px;
+    }
+  }
+  @media(max-width:768px){
+    .container{
+      max-width: 720px;
+    }
+    .menu{
+     width: 100%;
+    }
+    .content{
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+  

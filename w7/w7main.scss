@@ -1,0 +1,17 @@
+@import"scss/bs4/bootstrap.scss";
+@import"scss/layout";
+/*code starts here*/
+img{/*RWD必寫*/
+    max-width: 100%;
+    height: auto;
+}
+/*text setting*/
+.dark{
+    color:#8D8D8D;
+}
+.white{
+    color: white;
+}
+.center{
+text-align: center;
+}

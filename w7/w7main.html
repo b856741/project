@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Perfume</title>
+    <link rel="stylesheet" href="w7main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <!-- navbar 導覽列 -->
+    <!-- layout header -->
+        <!-- navbar-expand-md 自動摺疊 -->
+        <nav class="header navbar navbar-expand-md">
+            <div class="container-fluid container-md">
+                <!-- logo -->
+                <h1 class="mb-0 mr-auto"><a href="w7main.html" class="logo d-block">LOGO</a></h1>
+                <!-- hamCart -->
+                <a href="#" class="hamCart nav-link dark center align-self-end d-md-none">
+                    <i class="fas fa-shopping-cart d-block"></i>
+                    <span class="bg-primary white rounded-circle">3</span>
+                </a>
+                <!-- hamIcon -->
+                <button class="navbar-toggler border-0 p-0 ml-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars navbar-toggler border-0"></i>
+                </button>
+                <!-- collapse navbar-collapse外層中斷點群組和隱藏導覽列內容 -->
+                <!-- right navbar -->
+                <div class="collapse navbar-collapse justify-content-end d-none d-md-block">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mr-3"><a href="w7product.html" class="nav-link dark center"><i class="fas fa-tshirt "></i> Product</a></li>
+                        <li class="nav-item mr-3"><a href="w7login.html" class="nav-link dark center"><i class="fas fa-user"></i>Log in</a></li>
+                        <li class="nav-item mr-3"><a href="#" class="nav-link dark center"><i class="fas fa-heart"></i>Wishlist</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link dark center"><i class="fas fa-shopping-cart"></i>Cart(3)</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+    <!-- layout footer -->
+        <div class="bg-primary pt-1 pb-1">
+            <div class="container-fluid container-md">
+                <div class="row align-items-center ">
+                    <!-- justify-content-between -->
+                    <div class="col-auto"><a href="#"><img src="./img/d’Perfumew.png" class="img-fluid logo"></a>
+                    </div>
+                    <div class="col-auto mr-md-auto"><small class="white">© 2020. All Rights Reserved.</small></div>
+                    <!-- list-unstyled 除去預設圓點 -->
+                    <ul class="col-auto list-unstyled d-none d-md-flex mb-0">
+                        <!-- nav-link 置中 -->
+                        <li class="mr-2">
+                            <a href="w7product.html" class="nav-link white">Product</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="nav-link white">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 200, // offset (in px) from the original trigger point
+    delay: 50, // values from 0 to 3000, with step 50ms
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    </script>
+    <!-- js partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>  
+</body>
+</html>

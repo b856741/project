@@ -1,4 +1,8 @@
 // @import"scss/reset";
+// @import"layout";
+// @import"index";
+// @import"product";
+// @import"login";
 /*總整理*/
 @import"scss/bootstrap-4.5.2/scss/bootstrap.scss";
 *,*:before,*:after{/*RWD必加*/
@@ -51,5 +55,5 @@ h1{
 .footer{
     background-color: gray;
     padding: 10px;
-
+    color: #fff;
 }

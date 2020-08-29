@@ -1,6 +1,12 @@
 @import"scss/bs4/bootstrap.scss";
 @import"scss/layout";
+@import"scss/index";
+@import"scss/productList";
+@import"scss/product";
+@import"scss/login";
+@import"scss/user";
 /*code starts here*/
+/*main*/
 img{/*RWD必寫*/
     max-width: 100%;
     height: auto;
@@ -15,3 +21,27 @@ img{/*RWD必寫*/
 .center{
 text-align: center;
 }
+.bg-gray {
+    background-color: #E0E0E0 !important;
+    background-size: cover;
+  }
+.gray{
+    color: #8D8D8D;
+}
+.mb-112{
+    margin-bottom: 112px !important;
+}
+.mb-20{
+    margin-bottom: 20px !important;
+}
+@media (min-width: 768px){
+    .mb-md-6,
+    .my-md-6 {
+    margin-bottom: 4rem !important;
+  }
+}
+/*index*/
+/*productlist*/
+/*product*/
+/*login*/
+/*user*/

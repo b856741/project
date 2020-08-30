@@ -12,7 +12,7 @@
         <!-- navbar 導覽列 -->
         <!-- layout header -->
         <!-- navbar-expand-md 自動摺疊 -->
-        <nav class="header navbar navbar-expand-md">
+        <nav data-aos="zoom-in"class="header navbar navbar-expand-md">
             <div class="container-fluid container-md">
                 <!-- logo -->
                 <h1 class="mb-0 mr-auto"><a href="w7main.html" class="logo d-block">LOGO</a></h1>
@@ -38,7 +38,7 @@
             </div>
         </nav>
     <!-- banner layout -->
-        <div class="bg-primary pt-0.5 pb-0.5">
+        <div data-aos="flip-left"class="bg-primary pt-0.5 pb-0.5">
             <div class="container-fluid container-md">
                 <ul class="col-auto list-unstyled d-none d-md-flex mb-0">
                     <!-- nav-link 置中 -->
@@ -63,8 +63,256 @@
                 </ul>
             </div>
         </div>
-        <div class="content">
-            test Lorem ipsum dolor sit amet.
+         <!-- Modal start -->
+    <!-- favorite -->
+    <div class="modal fade" id="favorite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body center text-primary font-weight-bold">
+                    已加入我的收藏
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addToCart -->
+    <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body center text-primary font-weight-bold">
+                    已加入購物車
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+    <!-- productList -->
+        <div class="productList container-fluid container-md my-4 my-md-6">
+            <ul class="row list-unstyled mb-md-6">
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_1.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380
+                            <del class="dark">NT$1,580</del>
+                        </p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                        <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button> 
+                    </div>
+                </li>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_2.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380
+                            <del class="dark">NT$1,580</del>
+                        </p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                        <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                        <!-- </div> -->
+                    </div>
+                </li>
+                <!-- RWD -->
+                <div class="w-100 d-md-none"></div>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_3.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380</p>
+                        <!-- <div class="d-flex"> -->
+                            <!-- 用 d-flex 消掉兩個 icon 之間多出來的空白-->
+                            <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i
+                                    class="fas fa-heart"></i></button>
+                            <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i
+                                    class="fas fa-shopping-cart"></i></button>
+                        <!-- </div> -->
+                    </div>
+                </li>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_4.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380</p>
+                        <!-- <div class="d-flex"> -->
+                            <!-- 用 d-flex 消掉兩個 icon 之間多出來的空白-->
+                            <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i
+                                    class="fas fa-heart"></i></button>
+                            <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i
+                                    class="fas fa-shopping-cart"></i></button>
+                        <!-- </div> -->
+                    </div>
+                </li>
+                <div class="w-100 mb-md-6"></div>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_5.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380
+                            <del class="dark">NT$1,580</del>
+                        </p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                            <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </li>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_6.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="w7product.html" class="dark d-block pt-2">CHANEL N°5</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380
+                            <del class="dark">NT$1,580</del>
+                        </p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                            <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </li>
+                <div class="w-100 d-md-none"></div>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_7.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380</p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                            <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </li>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_8.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380</p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                        <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </li>
+                <div class="w-100 mb-md-6"></div>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_9.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380
+                            <del class="dark">NT$1,580</del>
+                        </p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                        <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </li>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_10.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380
+                            <del class="dark">NT$1,580</del>
+                        </p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                        <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </li>
+                <div class="w-100 d-md-none"></div>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_11.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380</p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                        <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </li>
+                <li data-aos="fade-up"class="card col mb-5 mb-md-0">
+                    <div class="protuct">
+                        <a href="#"><img src="img/product-item_12.png"class="card-img-top"></a>
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="card-title">
+                            <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
+                        </h3>
+                        <p class="card-text mb-0">Jo Malone</p>
+                        <p class="card-text mb-1">NT$1,380</p>
+                        <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
+                        <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <!-- page -->
+        <div data-aos="flip-left"class="container d-flex justify-content-center mb-6 mb-md-6">
+            <ul class="page list-unstyled d-flex">
+                <li><a href="#" class="p-3"><u>1</u></a></li>
+                <li><a href="#" class="otherPage p-3">2</a></li>
+                <li><a href="#" class="otherPage p-3">3</a></li>
+            </ul>
+        </div>
+    <!-- subscribe -->
+        <div data-aos="flip-left"class="subscribe gray mt-4">
+            <div class="container-fluid d-flex align-items-end">
+                <div class="container mb-112">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-20 font-weight-bold">
+                                記得<br>訂閱以獲取更多資訊!
+                            </h3>
+                            <!-- fixwidth 寫死訂閱處寬度 -->
+                            <form class="input-group fixwidth">
+                                <input type="email" class="form-control h-auto" id="email" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-primary rounded-0 py-3 px-4" type="submit" id="email">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     <!-- layout footer -->
         <div class="bg-primary pt-1 pb-1">

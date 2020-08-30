@@ -42,6 +42,38 @@ text-align: center;
 }
 /*index*/
 /*productlist*/
+/*subscribe*/
+// .subscribe{
+//     height: 870px;
+//     background: url("./img/subscribe-md.png") no-repeat center center/cover;
+//     p{
+//         line-height: 2.4;
+//     }
+//     .row{
+//         height: 870px;
+//         align-items: center;
+//     }
+//     button{
+//         border: 5px solid #916000;
+//         padding: 10px 100px;
+//         font-size: 24px;
+//     }
+//     button:hover{
+//         background-color: #8D8D8D;
+//     }
+// }
+// .fixwidth{
+//     max-width: 350px;
+// }
+.product{
+    position: relative;
+}
+.page{
+    font-size: 20px;
+    .otherPage{
+        color: #000;
+    }
+}
 /*product*/
 /*login*/
 /*user*/

@@ -10969,6 +10969,19 @@ img {
 
 /*index*/
 /*productlist*/
+/*subscribe*/
+.product {
+  position: relative;
+}
+
+.page {
+  font-size: 20px;
+}
+
+.page .otherPage {
+  color: #000;
+}
+
 /*product*/
 /*login*/
 /*user*/

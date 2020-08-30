@@ -3,8 +3,8 @@
 @import"scss/index";
 @import"scss/productList";
 @import"scss/product";
-@import"scss/login";
 @import"scss/user";
+@import"scss/plussetting";
 /*code starts here*/
 /*main*/
 img{/*RWD必寫*/
@@ -44,9 +44,24 @@ text-align: center;
     margin-bottom: 4rem !important;
   }
 }
+.mt-lg-40,
+.my-lg-40 {
+    margin-top: 40px !important;
+  }
+.mb-106,
+.my-106 {
+  margin-bottom: 106px !important;
+}
+.mb-md-54,
+.my-md-54 {
+    margin-bottom: 54px !important;
+  }
+.mb-28,
+.my-28 {
+  margin-bottom: 28px !important;
+}
 /*index*/
 /*productlist*/
 /*product*/
-/*login*/
-
+/*no need login scss*/
 /*user*/

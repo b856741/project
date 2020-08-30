@@ -10929,6 +10929,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*productList end*/
 /*product start*/
+.productContext img {
+  margin-bottom: 16px;
+}
+
 /*product end*/
 /*login start*/
 /*login end*/
@@ -10970,6 +10974,11 @@ img {
 
 .mb-20 {
   margin-bottom: 20px !important;
+}
+
+.mt-40,
+.my-40 {
+  margin-top: 40px !important;
 }
 
 @media (min-width: 768px) {

@@ -10915,6 +10915,18 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*index end*/
 /*productList start*/
+.product {
+  position: relative;
+}
+
+.page {
+  font-size: 20px;
+}
+
+.page .otherPage {
+  color: #000;
+}
+
 /*productList end*/
 /*product start*/
 /*product end*/
@@ -10969,19 +10981,6 @@ img {
 
 /*index*/
 /*productlist*/
-/*subscribe*/
-.product {
-  position: relative;
-}
-
-.page {
-  font-size: 20px;
-}
-
-.page .otherPage {
-  color: #000;
-}
-
 /*product*/
 /*login*/
 /*user*/

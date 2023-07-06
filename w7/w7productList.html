@@ -410,7 +410,7 @@
         new Vue({
           el: '#app',
           data: {
-            buttonText: '已加入购物车',
+            buttonText: '已加入購物車',
             clickCount: 0
           },
           methods: {
@@ -418,10 +418,10 @@
               this.clickCount++;
               
               if (this.clickCount === 1) {
-                this.buttonText = '取消加入购物车';
+                this.buttonText = '取消加入購物車';
               } else if (this.clickCount === 2) {
-                this.buttonText = '已加入购物车';
-                this.clickCount = 0; // 重置点击计数
+                this.buttonText = '已加入購物車';
+                this.clickCount = 0; // 重置計數器
               }
             }
           }

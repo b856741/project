@@ -6,10 +6,6 @@
     <title>產品列表 | D'Perfume</title>
     <link rel="stylesheet" href="w7main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <!-- add vue -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <!-- add vue -->
 </head>
 <body>
     <!-- <div class="container"> -->
@@ -79,23 +75,23 @@
         </div>
     </div>
     <!-- addToCart -->
-    <div class="modal fade" id="app addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body center text-primary font-weight-bold">
-                    {{ cartText }}
+                    已加入購物車
                 </div>
             </div>
         </div>
     </div>
     <!-- productList -->
-        <div id='app' class="productList container-fluid container-md my-4 my-md-6">
+        <div class="productList container-fluid container-md my-4 my-md-6">
             <ul class="row list-unstyled mb-md-6">
                 <li data-aos="fade-up"class="card col mb-5 mb-md-0">
                     <div class="protuct">
                         <a href="#"><img src="img/product-item_1.png"class="card-img-top"></a>
                     </div>
-                    <div id='app'class="card-body p-0">
+                    <div class="card-body p-0">
                         <h3 class="card-title">
                             <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
                         </h3>
@@ -104,10 +100,7 @@
                             <del class="dark">NT$1,580</del>
                         </p>
                         <button class="btn btn-link pl-0 pr-1" data-toggle="modal" data-target="#favorite"><i class="fas fa-heart"></i></button>
-                        <!-- old -->
-                        <!-- <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>  -->
-                        <!-- new -->
-                        <button class="btn btn-link px-1" @click="toggleCart"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button> 
                     </div>
                 </li>
                 <li data-aos="fade-up"class="card col mb-5 mb-md-0">
@@ -374,23 +367,5 @@
     <!-- js partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>  
-    <!-- vue.js -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <!-- change addcart vue.js -->
-    <script>
-        new Vue({
-            el: '#app',
-            data: {
-                buttonText: '加入購物車',
-                cartClicked: false
-            },
-            methods: {
-                toggleCart() {
-                    this.cartClicked = !this.cartClicked;
-                    this.buttonText = this.cartClicked ? '取消加入購物車' : '加入購物車';
-                }
-            }
-        });
-    </script>
 </body>
 </html>

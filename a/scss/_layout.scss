@@ -1,0 +1,27 @@
+/*layout start*/
+/*layout logo*/
+.logo{
+    background: url("./img/d’Perfume.png") no-repeat center center/contain;
+    // max-width:128px;
+    // max-height: 38px; 
+    width: 128px;
+    height: 38px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*layout logo*/
+/*layout hamCart*/
+.hamCart {
+    position: relative;
+    span {
+        font-size: 10px;
+        position: absolute;
+        top: -3px;
+        right: 5px;
+        padding: 0 5px;
+    }
+}
+/*layout hamCart*/
+/*layout banner (except main)*/
+/*layout end*/

@@ -1,0 +1,63 @@
+/*code starts here*/
+/*main*/
+img{/*RWD必寫*/
+    max-width: 100%;
+    height: auto;
+}
+/*text setting*/
+.dark{
+    color:#8D8D8D;
+}
+.white{
+    color: white;
+}
+.center{
+text-align: center;
+}
+.bg-gray {
+    background-color: #E0E0E0 !important;
+    background-size: cover;
+  }
+.gray{
+    color: #8D8D8D;
+}
+.mb-112{
+    margin-bottom: 112px !important;
+}
+.mb-20{
+    margin-bottom: 20px !important;
+}
+.mb-40{
+    margin-bottom: 40px !important;
+}
+.mt-40,
+.my-40 {
+  margin-top: 40px !important;
+}
+@media (min-width: 768px){
+    .mb-md-6,
+    .my-md-6 {
+    margin-bottom: 4rem !important;
+  }
+}
+.mt-lg-40,
+.my-lg-40 {
+    margin-top: 40px !important;
+  }
+.mb-106,
+.my-106 {
+  margin-bottom: 106px !important;
+}
+.mb-md-54,
+.my-md-54 {
+    margin-bottom: 54px !important;
+  }
+.mb-28,
+.my-28 {
+  margin-bottom: 28px !important;
+}
+.mt-32,
+.my-32 {
+  margin-top: 32px !important;
+}
+/*code ends here*/

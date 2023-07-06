@@ -9,7 +9,6 @@
     <!-- add vue -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- add vue -->
 </head>
 <body>
@@ -79,41 +78,24 @@
             </div>
         </div>
     </div>
-    <!-- addToCart old-->
-    <!-- <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- addToCart -->
+    <div class="modal fade" id="app addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body center text-primary font-weight-bold">
-                    已加入購物車
+                    {{ cartText }}
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- addToCart new-->
-    <!-- <div id="app">
-        <button class="btn btn-link px-1" @click="addToCart" data-toggle="modal" data-target="#addToCart">
-          <i class="fas fa-shopping-cart"></i>
-          {{ buttonText }}
-        </button>
-    
-        <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-body center text-primary font-weight-bold">
-                已加入購物車
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    </div>
     <!-- productList -->
-        <div class="productList container-fluid container-md my-4 my-md-6">
+        <div id='app' class="productList container-fluid container-md my-4 my-md-6">
             <ul class="row list-unstyled mb-md-6">
                 <li data-aos="fade-up"class="card col mb-5 mb-md-0">
                     <div class="protuct">
                         <a href="#"><img src="img/product-item_1.png"class="card-img-top"></a>
                     </div>
-                    <div id="app"class="card-body p-0">
+                    <div id='app'class="card-body p-0">
                         <h3 class="card-title">
                             <a href="#" class="dark d-block pt-2">Poppy & Barley</a>
                         </h3>
@@ -125,18 +107,7 @@
                         <!-- old -->
                         <!-- <button class="btn btn-link px-1" data-toggle="modal" data-target="#addToCart"><i class="fas fa-shopping-cart"></i></button>  -->
                         <!-- new -->
-                        <button class="btn btn-link px-1" @click="addToCart" data-toggle="modal" data-target="#addToCart">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                          <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-                                <div class="modal-body center text-primary font-weight-bold">
-                                  已加入購物車
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        <button class="btn btn-link px-1" @click="toggleCart"><i class="fas fa-shopping-cart"></i></button>
                     </div>
                 </li>
                 <li data-aos="fade-up"class="card col mb-5 mb-md-0">
@@ -408,24 +379,18 @@
     <!-- change addcart vue.js -->
     <script>
         new Vue({
-          el: '#app',
-          data: {
-            buttonText: '已加入購物車',
-            clickCount: 0
-          },
-          methods: {
-            addToCart() {
-              this.clickCount++;
-              
-              if (this.clickCount === 1) {
-                this.buttonText = '取消加入購物車';
-              } else if (this.clickCount === 2) {
-                this.buttonText = '已加入購物車';
-                this.clickCount = 0; // 重置計數器
-              }
+            el: '#app',
+            data: {
+                buttonText: '加入購物車',
+                cartClicked: false
+            },
+            methods: {
+                toggleCart() {
+                    this.cartClicked = !this.cartClicked;
+                    this.buttonText = this.cartClicked ? '取消加入購物車' : '加入購物車';
+                }
             }
-          }
         });
-      </script>
+    </script>
 </body>
 </html>

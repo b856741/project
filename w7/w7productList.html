@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- add vue -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- add vue -->
 </head>
@@ -127,7 +127,6 @@
                         <!-- new -->
                         <button class="btn btn-link px-1" @click="addToCart" data-toggle="modal" data-target="#addToCart">
                             <i class="fas fa-shopping-cart"></i>
-                            {{ buttonText }}
                           </button>
                           <div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -411,19 +410,19 @@
         new Vue({
           el: '#app',
           data: {
-            buttonText: '已加入購物車',
-            clickCount: 1
+            buttonText: '已加入购物车',
+            clickCount: 0
           },
           methods: {
             addToCart() {
-              if (this.clickCount === 1) {
-                this.buttonText = '取消加入購物車';
-              } else if (this.clickCount === 2) {
-                this.buttonText = '已加入購物車';
-                this.clickCount = 0; // 重製點擊次數
-              }
-              
               this.clickCount++;
+              
+              if (this.clickCount === 1) {
+                this.buttonText = '取消加入购物车';
+              } else if (this.clickCount === 2) {
+                this.buttonText = '已加入购物车';
+                this.clickCount = 0; // 重置点击计数
+              }
             }
           }
         });
